@@ -217,14 +217,16 @@ font-family: 'Lobster', cursive;
 .velas {
   background: #ffffff;
   border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  position: fixed;
-  margin-left: -2.4px;
-  margin-top: -8.33333333px;
-  width: 5px;
-  height: 35px;
+  display: flex;
+    flex-direction: column; /* Xếp nến và bánh theo hàng dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc màn hình */
+    align-items: center;    /* Căn giữa theo chiều ngang màn hình */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
   transform: translate(-5%, -50%) translateY(-1000px);
   -webkit-transform: translate(-5%, -50%) translateY(-1000px);
   -webkit-backface-visibility: hidden;

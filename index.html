@@ -30,15 +30,15 @@
 
 		.cake_and_velas {
 			display: flex;
-			justify-content: center;
-			align-items: center;
+			flex-direction: column; /* Xếp nến và bánh theo hàng dọc */
+			justify-content: center; /* Căn giữa theo chiều dọc màn hình */
+			align-items: center;    /* Căn giữa theo chiều ngang màn hình */
 			position: fixed;
-			top: -100;
+			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100vh;
 			z-index: 100;
-			cursor: pointer;
 		}
 
 		.card {
