@@ -33,14 +33,13 @@
 			flex-direction: column; /* Xếp nến và bánh theo hàng dọc */
 			justify-content: center; /* Căn giữa theo chiều dọc màn hình */
 			align-items: center;    /* Căn giữa theo chiều ngang màn hình */
-			position: fixed;
+			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100vh;
 			z-index: 100;
 		}
-
 		.card {
 			display: none;
 			position: fixed;
@@ -109,6 +108,7 @@
 </HEAD>
 
 <BODY><div class="cute-text">Bấm vào cái bánh đi</div><canvas id="pinkboard"></canvas>
+	
 	<div class="cake_and_velas" id="cakeContainer">
 		<div class="velas">
 			<div class="fuego"></div>
@@ -116,9 +116,11 @@
 			<div class="fuego"></div>
 			<div class="fuego"></div>
 			<div class="fuego"></div>
-		</div>
-		<svg id="cake" version="1.1" x="0px" y="0px" width="290px" height="500px" viewBox="0 0 200 500"
-			enable-background="new 0 0 200 500" xml:space="preserve">
+	</div>
+		<svg id="cake" version="1.1" x="0px" y="0px" width="290px" height="auto" 
+     viewBox="0 300 200 50" 
+     enable-background="new 0 400 200 100" xml:space="preserve">
+			
 			<path fill="#a88679"
 				d="M173.667-13.94H26.333c-3.999 0-4-16.002 0-16.002h147.334c4 0 4.001 16.002 0 16.002z">
 				<animate id="e" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1" begin="a.end"
